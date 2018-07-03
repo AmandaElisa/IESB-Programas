@@ -1,0 +1,21 @@
+#include <stdio.h>
+	int main(){
+		int X = 1, Y = 1, i, seq, aux = 0;
+  	 
+		printf("1, 1");
+		
+		for(i = 0; i < 8; i++){
+			seq = Y + X;
+			
+			printf(", %d", seq);
+			
+			aux = Y;
+			Y = seq;
+			X = aux;
+			
+		}
+			printf("\n");
+
+		
+	return 0;
+	}
